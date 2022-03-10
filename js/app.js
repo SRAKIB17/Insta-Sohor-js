@@ -16,7 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-    likedPostsId.plus(id); 
+    likedPostsId.push(id); 
     showPosts(posts);
 };
 
@@ -120,9 +120,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments[0].user}
+                          ${post.comments?.user}
                       </a>
-                      ${post.comments[0].text}
+                      ${post.comments?.text}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>

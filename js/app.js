@@ -32,12 +32,13 @@ const displayContent = (text) => {
 };
 
 const switchTab = (id) => {
-  document.getElementById( id ).textContent = '';
+  
     if (id === "posts") {
         document.getElementById( "posts" ).style.display = "grid";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
     } else if (id === "liked") {
+        document.getElementById( id ).textContent = '';
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
@@ -47,7 +48,7 @@ const switchTab = (id) => {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
-
+        document.getElementById( id ).textContent = '';
         displayReportedPosts();
     }
 };

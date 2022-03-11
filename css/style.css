@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Poppins&display=swap");
 /* CSS Reset */
 *,
 *::after,
@@ -258,4 +258,11 @@ img {
 }
 td{
   padding: 5px;
+}
+footer {
+
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(235, 247, 235);
+  margin: 10px;
 }
